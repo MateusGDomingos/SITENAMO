@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>{{.Nome1}} & {{.Nome2}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <p class="hero-tagline">novela de amor</p>
+            <h1 class="hero-title">{{.Nome1}} <span class="ampersand">&</span> {{.Nome2}}</h1>
+            <p class="hero-date">Desde {{formatoData .DataInicio}}</p>
+        </section>
+
+        <!-- CONTADOR -->
+        <section class="contador" id="contador">
+            <h2 class="section-title">Tempo Juntos</h2>
+            <div class="contador-grid" data-inicio="{{formatoDataISO .DataInicio}}">
+                <div class="contador-item">
+                    <span class="numero" id="anos">0</span>
+                    <span class="label">anos</span>
+                </div>
+                <div class="contador-item">
+                    <span class="numero" id="meses">0</span>
+                    <span class="label">meses</span>
+                </div>
+                <div class="contador-item">
+                    <span class="numero" id="dias">0</span>
+                    <span class="label">dias</span>
+                </div>
+                <div class="contador-item">
+                    <span class="numero" id="horas">0</span>
+                    <span class="label">horas</span>
+                </div>
+                <div class="contador-item">
+                    <span class="numero" id="minutos">0</span>
+                    <span class="label">min</span>
+                </div>
+                <div class="contador-item">
+                    <span class="numero" id="segundos">0</span>
+                    <span class="label">seg</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section class="galeria" id="galeria">
+            <h2 class="section-title">Nossas Memórias</h2>
+            <div class="galeria-grid">
+                {{range .Fotos}}
+                <button class="galeria-item" data-src="{{.Src}}" data-alt="{{.Alt}}" aria-label="Ver {{.Alt}}">
+                    <img src="{{.Src}}" alt="{{.Alt}}" loading="lazy">
+                </button>
+                {{end}}
+            </div>
+        </section>
+
+        <!-- DECLARAÇÕES -->
+        <section class="declaracoes" id="declaracoes">
+            <h2 class="section-title">Declarações</h2>
+            <div class="declaracoes-list">
+                {{range .Declaracoes}}
+                <article class="declaracao-card">
+                    <h3 class="declaracao-titulo">{{.Titulo}}</h3>
+                    <p class="declaracao-texto">{{.Texto}}</p>
+                </article>
+                {{end}}
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p class="footer-message">Feito com carinho, só pra você.</p>
+            <p class="footer-meta">{{.Nome1}} & {{.Nome2}} &middot; {{anoAtual}}</p>
+        </footer>
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Fechar">&times;</button>
+        <button class="lightbox-prev" aria-label="Anterior">&lsaquo;</button>
+        <img class="lightbox-img" src="" alt="">
+        <button class="lightbox-next" aria-label="Próximo">&rsaquo;</button>
+    </div>
+
+    <script src="/static/js/main.js" defer></script>
+</body>
+</html>

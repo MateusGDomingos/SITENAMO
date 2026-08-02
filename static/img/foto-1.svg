@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8C8DC"/>
+      <stop offset="100%" stop-color="#E8A0BD"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#g1)"/>
+  <text x="300" y="300" font-family="Playfair Display, Georgia, serif" font-size="72" font-weight="700" fill="white" text-anchor="middle" opacity="0.9">I &#38; M</text>
+  <text x="300" y="360" font-family="Lato, sans-serif" font-size="22" fill="white" text-anchor="middle" opacity="0.7">Foto 1</text>
+</svg>

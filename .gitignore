@@ -1,0 +1,33 @@
+# Binários
+*.exe
+*.dll
+*.so
+*.dylib
+server
+*.test
+*.out
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ambiente e segredos
+.env
+.env.*
+*.log
+
+# Certificados
+cert.pem
+key.pem
+*.crt
+*.key
+
+# Go workspace
+go.work
+go.work.sum
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
