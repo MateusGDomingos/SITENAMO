@@ -61,7 +61,7 @@ func main() {
 	dados := Dados{
 		Nome1:      "Isabela",
 		Nome2:      "Mateus",
-		DataInicio: time.Date(2023, 1, 1, 0, 0, 0, 0, time.UTC),
+		DataInicio: time.Date(2026, 05, 15, 19, 00, 00, 0, time.UTC),
 		Declaracoes: []Declaracao{
 			{
 				Titulo: "O Início",
@@ -81,12 +81,12 @@ func main() {
 			},
 		},
 		Fotos: []Foto{
-			{Src: "/static/img/foto-1.svg", Alt: "Isabela e Mateus - foto 1"},
-			{Src: "/static/img/foto-2.svg", Alt: "Isabela e Mateus - foto 2"},
-			{Src: "/static/img/foto-3.svg", Alt: "Isabela e Mateus - foto 3"},
-			{Src: "/static/img/foto-4.svg", Alt: "Isabela e Mateus - foto 4"},
-			{Src: "/static/img/foto-5.svg", Alt: "Isabela e Mateus - foto 5"},
-			{Src: "/static/img/foto-6.svg", Alt: "Isabela e Mateus - foto 6"},
+			{Src: "/static/img/foto-1.jpeg", Alt: "Isabela e Mateus - foto 1"},
+			{Src: "/static/img/foto-2.jpeg", Alt: "Isabela e Mateus - foto 2"},
+			{Src: "/static/img/foto-3.jpeg", Alt: "Isabela e Mateus - foto 3"},
+			{Src: "/static/img/foto-4.jpeg", Alt: "Isabela e Mateus - foto 4"},
+			{Src: "/static/img/foto-5.jpeg", Alt: "Isabela e Mateus - foto 5"},
+			{Src: "/static/img/foto-6.jpeg", Alt: "Isabela e Mateus - foto 6"},
 		},
 	}
 
