@@ -1,4 +1,4 @@
-app = "sitename-isabela-mateus"
+app = "declarationsforisabelam"
 
 [build]
   dockerfile = "Dockerfile"
